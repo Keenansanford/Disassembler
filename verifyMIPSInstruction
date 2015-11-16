@@ -1,0 +1,72 @@
+/*
+ * verifyMIPSInstruction
+ *
+ * This function verifies that the string provided to it as a paramater
+ * contains 32 characters representing binary digits (characters '0' and
+ * '1'), followed by a null byte.  If the string contains the wrong
+ * number of characters or contains invalid charaters (not '0' or '1'),
+ * then the function prints an error message to stderr giving the line
+ * number and an appropriate error message.
+ *
+ *   int verifyMIPSInstruction (int lineNum, char * instruction);
+ *
+ *      Pre-condition:  instruction is a null-terminated string
+ *      Post-condition: the characters in "instruction" have not
+ *              been modified
+ *      Returns: 1 if instr contained 32 characters representing binary
+ *              digits ('0' and '1') followed by a null byte
+ *           0 if instr has the wrong number of characters or
+ *                  contains invalid characters
+ *      Output: Prints an error message to stderr if necessary
+ *
+ * Implementation:
+ *      "instr" must be a valid, 32-bit MIPS instruction.
+ *
+ * Author: Alyce Brady
+ * With assistance from: Keenan Sanford
+ *
+ * Creation Date:   idk
+ * Modified:    4/10/2015      Didn't return properly properly.
+ */
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+
+int verifyMIPSInstruction (int lineNum, char * instr)
+  /*  returns 1 if instr contains 32 characters representing binary
+   *  digits ('0' and '1'); 0 otherwise
+   */
+{
+    int length;
+    int i;
+    char charChecker;
+
+    length = strlen(instr);
+    if (length != 32)
+    {
+        fprintf (stderr, "Error: line %d does not have 32 chars.\n", lineNum);
+        return 0;
+    }
+
+    /* If the instruction has 32 bits, are those bits either "1"'s or "0"'s?
+     */
+    else
+    {
+        for ( i = 0; i < length; i++ )
+        {
+            if ( instr[i] - '0' == 0 || instr[i] - '0' == 1 )
+            {
+            }
+
+            else
+            {
+              fprintf(stderr, "Error: line %d contains an invalid character.\n",
+                    lineNum);
+              return 0;
+            }
+        }
+
+        return 1;
+    }
+}
