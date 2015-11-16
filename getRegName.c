@@ -31,6 +31,7 @@
  * Modifications: Keenan Sanford 4/20/2015
  */
 
+// Added missing registers to the list (about 24 of them)
 char * getRegName (int regNbr)
   /* returns mnemonic name for given register */
 {
