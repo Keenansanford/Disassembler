@@ -19,6 +19,7 @@
 
 #include "processRFormat.h"
 
+// I wrote this portion of the code myself.
 char * processRFormat (char string[])
 	// Returns the assembly language string associated with the 32 byte command.
 {
