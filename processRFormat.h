@@ -1,3 +1,4 @@
+// I wrote this portion of the code myself.
 #ifndef	processRFormat_h
 #define	processRFormat_h
 
