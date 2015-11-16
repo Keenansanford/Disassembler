@@ -2,7 +2,7 @@ Disassembler Summary,
 
 This code translates 32-bit machine language MIPS instructions into assembly language.
 
-It was written in C using SublimeText Editor and compiled using Apple's XCode under the direction of Dr. Aylce Brady at Kalamazoo College. 
+This program was created under the direction of Dr. Aylce Brady at Kalamazoo College. It was written in C using SublimeText Editor and compiled with Apple's XCode.
 
 The classes are described in detail below:
 
