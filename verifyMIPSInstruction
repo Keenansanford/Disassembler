@@ -33,6 +33,7 @@
 #include <string.h>
 #include <math.h>
 
+// The documentation and frame for this class was provided by Kalamazoo College. It was updated to ensure only 1's and 0'1 are used as input.
 int verifyMIPSInstruction (int lineNum, char * instr)
   /*  returns 1 if instr contains 32 characters representing binary
    *  digits ('0' and '1'); 0 otherwise
