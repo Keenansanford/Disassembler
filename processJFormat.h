@@ -1,3 +1,4 @@
+// I wrote this portion of the code myself.
 #ifndef	processJFormat_h
 #define	processJFormat_h
 
