@@ -1,4 +1,4 @@
-// I write this class myself based of a template provided by the college.
+// I wrote this class myself based of a template provided by the college.
 #ifndef	main_h
 #define	main_h
 
