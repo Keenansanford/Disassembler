@@ -36,6 +36,7 @@
 
 #include "main.h"
 
+// The reader portion of this file was fully functional prior to the project. The reader was updated to take a file input. It was further optimized to check the opcode and send the instruction to the appropriate MIPS format reader.
 int main(int argc, char *argv[])
 {
     char buffer[BUFSIZ];                  /* contains binary code */
