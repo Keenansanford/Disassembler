@@ -19,6 +19,7 @@
 
 #include "processJFormat.h"
 
+// I wrote this portion of the code myself.
 char * processJFormat (char string[])
 	// Returns the assembly language string associated with the 32 byte command.
 {
