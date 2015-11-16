@@ -33,6 +33,7 @@
 #include <stdio.h>
 #include <math.h>
 
+// The documentation and frame for this class was provided by Kalamazoo college. I filled in the class allowing it to work as intended.
 int binToDec(char string[], int begin, int end)
 {
 	int i;
